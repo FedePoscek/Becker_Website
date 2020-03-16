@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--la mayoría de smartphones simulan tamaños de pantalla mayores, haciendo una especie de dimensiones virtuales que faciliten la lectura de webs que no están diseñadas para Responsive Web Design. Por ello, lo más seguro es que tengas que poner el "viewport" en el documento HTML a algo como:-->
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Becker Retornable! - #vivaLaDevolucion!</title>
+    <link rel="stylesheet" href="_css/reset.css">
+    <link rel="stylesheet" href="_css/normalize.css">
+    <link rel="stylesheet" href="_css/BeckerRetornable.css">
+    <link rel="icon" type="image/png" href="_imgs/favicon_becker_01.png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,800,900&display=swap" rel="stylesheet">
+      <!-- light 300, regular 400, Extrabold 800 y Black 900-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800&display=swap" rel="stylesheet">
+      <!-- font-family: 'Open Sans', sans-serif; regular 400,400i, semi-bold 600, bold 700,700i, extra bold 800-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    
+    
+    
+</head>
+
+<body>
+
+
+<!-- INICIO HEADER + NAV -->
+
+    <header class="" id="header">
+      <nav class="navbarHidding" id="navegador">
+        <ul class="brand">
+            <div class="links_header">
+              <li><a href="#"><img class="header-img" id="header-img" src="_imgs/LogoBecker.svg" alt="Becker"></a></li>
+              <li><a class="nav-text" href="#botellin-img">Botellín!</a></li>
+              <li><a class="nav-text" href="#etiqueta">Lo nuevo!</a></li>
+              <li><a class="nav-text" href="#vivaLaDevolucion">Viva!</a></li>
+              <li><a class="nav-text" href="#placaCerveza">Conocenos!</a></li>
+              <li><a class="nav-text" href="#contacto">Quiero!</a></li>
+            </div>
+        </ul>
+      </nav>
+      <nav id="mySidenav" class="sidenav">
+          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+          <a class="nav-text" href="#botellin-img" onclick="closeNav()">Botellín!</a>
+          <a class="nav-text" href="#vivaLaDevolucion" onclick="closeNav()">Viva!</a>
+          <a class="nav-text" href="#contacto" onclick="closeNav()">Quiero!</a>
+          <a class="nav-text" href="#etiqueta" alt="Nueva!" onclick="closeNav()">Lo nuevo!</a>
+          <a class="nav-text" href="#placaCerveza" alt="Cerveza" onclick="closeNav()">Conocenos!</a>
+      </nav>
+      <div id="navegadorResponsive">
+        
+        <div class="brandResponsive">
+           <img class="header-img-responsive" id="header-img" src="_imgs/LogoBecker.svg" alt="Becker">
+           
+        </div>
+        <div class="main" id="main">
+          <span onclick="openNav()">&#9776;</span>
+        </div>
+      </div>
+
+
+
+
+
+    </header>
+
+<!-- FIN HEADER + NAV -->
+
+
+<!-- INICIO BOTELLIN RETORNABLE -->
+
+    <section id="seccionBotellin">
+        <div class="botellin_img"><img id="botellin-img" src="_imgs/beckerBotellin.png" alt="Becker"></div>
+
+        <div class="Botellin-text">
+          <p class="nuevaBecker-text">Nueva Becker!</p>
+          <p class="botellinRetornable-text">BOTELLÍN<br>RETORNABLE</p>
+        </div>  
+        
+        <div class="botones-botellin">
+          <a class="boton01" href="#etiqueta" alt="Nueva!">Mirá lo nuevo!</a>
+          <a class="boton02" href="#placaCerveza" alt="Cerveza">Conocenos!</a>
+        </div>  
+
+        <div class="retornableContenedor">
+          <p class="retornableText">
+            <span>RETORNABLE!</span>
+          </p>
+        </div>
+    </section>
+
+<!-- FIN BOTELLIN RETORNABLE -->
+
+
+<!-- INICIO PLACA ETIQUETA -->
+    <!-- Acá se activa "_js/placaEtiqueta.js"-->
+    <section class="seccionEtiqueta" id="etiqueta">
+      <ul class="seccionEtiqueta-elementos">
+        <div class="alineacionEtiqueta">
+         
+          <li><img id="etiqueta-img" src="_imgs/beckerEtiqueta_circ.svg" alt="" onclick="cambioTexto(event)"></li>  
+          <li class="botones boton-1"></li>
+          <li class="botones boton-2"></li>
+          <li class="botones boton-3"></li>
+          <li class="botones boton-4"></li>
+          <li><img id="etiqueta-img-fondo" src="_imgs/beckerEtiqueta.png" alt="Becker"></li>
+
+          <figcaption class="textoPuntero">Clickeá sobre la etiqueta para conocerla!</figcaption>
+        </div>
+        <div class="Etiqueta-sideText" id="Etiqueta_sideText">
+          <div id="etiqueta-01">
+            <p class="title-sideText" id="title_side">Mirá lo nuevo!</p>
+            <p class="text-sideText" id="text_side">Hacé click sobre las distintas partes de la imagen para conocer las novedades!</p>
+          </div>
+        </div>  
+      </ul>
+    </section>
+
+<!-- FIN PLACA ETIQUETA -->
+
+
+<!-- INICIO PLACA VIVA LA DEVOLUCIÓN! -->
+
+    <section id="vivaLaDevolucion">
+      <div class="dev-titulo">
+        <p class="dev-titulo-text">VIVA LA DEVOLUCIÓN!</p>
+      </div>
+      <div class="dev-imagen">
+        <img id="dev-img" src="_imgs/botellas.svg" alt="Becker">
+      </div>
+
+      <div>
+        <ul class="dev-texto">
+          <li><i class="material-icons">check_box</i>Crea un hábito de consumo consciente.</li>
+          <li><i class="material-icons">check_box</i>El consumidor cuida el Medio Ambiente.</li>
+          <li><i class="material-icons">check_box</i>Minimiza la generación de residuos.</li>
+          <li><i class="material-icons">check_box</i>Paga únicamente la cerveza que consume.</li>
+        </ol>
+      </div>
+    </section>
+
+<!-- FIN PLACA VIVA LA DEVOLUCIÓN! -->
+
+
+<!-- INICIO PLACA CERVEZA -->
+
+    <section id="placaCerveza">
+      <div class="Cerveza-titulo">
+        <p class="Cerveza-titulo-text">LA CERVEZA!</p>
+      </div>
+
+      <div class="Cerveza-texto">
+        <p class="Cerveza-texto-text">Es una típica cerveza lager perfectamente equilibrada, transparente dorada, buen nivel de espuma y sabor. Para hacerla utilizamos sólo ingredientes naturales que crecen en los nuestros queridos campos Chilenos. Se puede combinar a la perfección con platos como:<br><span>• PIZZA DE MUZARELLA • MILANESA CON PAPAS FRITAS • RABAS •</span></p>
+      </div>
+    </section>
+    
+<!-- FIN PLACA CERVEZA -->
+
+
+<!-- INICIO PLACA ESPECIFICACIONES -->
+
+    <section id="Especificaciones">
+      <div class="Especificaciones-col-1">
+        <p class="Especificaciones-text-01">GRADUACIÓN ALCOHÓLICA:</p>
+        <p class="Especificaciones-text-02">4,9%</p>
+        <p class="Especificaciones-text-01">TEMPERATURA PERFECTA:</p>
+        <p class="Especificaciones-text-02">3° Celsius</p>
+        <p class="Especificaciones-text-01">AMARGOR:</p>
+        <p class="Especificaciones-text-02">15 IBUS</p>
+      </div>
+
+      <div class="Especificaciones-col-2">
+        <img id="chapa-img" src="_imgs/beckerChapa.png" alt="Chapita Becker">
+      </div>
+
+      <div class="Especificaciones-col-3">
+        <p class="Especificaciones-text-01">MALTAS USADAS:</p>
+        <p class="Especificaciones-text-02">PILSEN</p>
+        <p class="Especificaciones-text-01">LÚPULOS USADOS:</p>
+        <p class="Especificaciones-text-02">Cascade</p>
+        <p class="Especificaciones-text-01"><span>CALIBRE:</span></p>
+        <p class="Especificaciones-text-02"><span>340 cc</span></p>
+      </div>
+    </section>
+
+<!-- FIN PLACA ESPECIFICACIONES -->
+
+
+<!-- INICIO PLACA CONTACTO -->
+
+    <div id="contacto">
+      <div class="contenedor-contacto">
+        <div class="Contacto-c1">QUIERO MI BECKER!</div>
+        <div class="Contacto-c2">Av. Pdte. Eduardo Frei Montalva 9600, Quilicura, Chile.</div>
+        <div class="Contacto-c3"><a href="tel:+56226230857">+56 2 2623 0857</a></div>
+        <div class="Contacto-c4"><a href="mailto:vivaladevolucion@becker.cl">vivaladevolucion@becker.cl</a></div>
+      </div>
+
+      <form class="Contacto-form" id="form" method="POST">
+        <input class="Contacto-boton" name="nombre" id="nombre" type="text" placeholder="Tu nombre:">
+        <input class="Contacto-boton" name="mail" id="mail" type="email" placeholder="Tu mail:">
+        <input class="Contacto-boton" name="telefono" id="telefono" type="number" placeholder="Tu teléfono:">
+        <textarea class="Contacto-boton Contacto-boton-textarea" name="comentarios" rows="1" cols="1" placeholder="Tu consulta:"></textarea>
+        <input class="Contacto-boton-envio" id="submit" type="submit" value="ENVIAR">
+      </form>
+    </div>
+
+<!-- FIN PLACA CONTACTO -->
+
+
+<!-- INICIO FOOTER -->
+
+    <footer class="footer-background ">
+      <div>
+        <p class="footer-text">BEBER CON MODERACIÓN. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS. NO COMPARTA EL CONTENIDO CON MENORES.</p>
+      </div>
+    </footer>
+
+<!-- FIN FOOTER -->
+
+  <script src="_js/placaEtiqueta.js"></script>
+  <script src="_js/menu_navResponsive_Becker.js"></script>
+  <script src="_js/prefixfree.min.js"></script>
+  <script src="_js/hiddingNavbar.js"></script>
+  </body>
+</html>
