@@ -22,8 +22,7 @@ html {
 }
 body {
     background-image: linear-gradient(90deg, var(--color-azul-oscuro), var(--color-azul-claro));
-     overflow-x: hidden;
-     
+     overflow-x: hidden;    
 }
 
 /* FIN BODY */
@@ -99,7 +98,7 @@ body {
     direction: ltr;
     
   
-    /* Support for all WebKit browsers. */
+    /* Soporte para todos los navegadores Webkit */
     -webkit-font-smoothing: antialiased;
     /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
@@ -119,11 +118,11 @@ body {
 }
 .sidenav {
     height: 100vh;
-    width: 0;
+    width: 0px;
     position: fixed;
     z-index: 101;
-    top: 0;
-    right: 0;
+    top: 0px;
+    right: 0px;
     background-color: var(--color-azul-oscuro);
     overflow-x: hidden;
     transition: 0.2s;
