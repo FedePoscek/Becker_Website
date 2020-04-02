@@ -22,7 +22,8 @@ html {
 }
 body {
     background-image: linear-gradient(90deg, var(--color-azul-oscuro), var(--color-azul-claro));
-     overflow-x: hidden;    
+     overflow-x: hidden;
+     
 }
 
 /* FIN BODY */
@@ -157,6 +158,7 @@ body {
     font-size: 30px;
     cursor: pointer;
 }
+
 
 /* FIN HEADER + NAV */
 
@@ -537,12 +539,14 @@ body {
     grid-template-columns: 37.5% 25% 37.5%;
     margin: 2em 0em;
 }
+
 .Especificaciones-col-1 {
     grid-column: 1 / 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    /*background-color: greenyellow;*/
 }
 
 .Especificaciones-col-2 {
@@ -550,6 +554,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /*background-color: violet;*/
 }
 #chapa-img {
     width: 20em;
@@ -561,6 +566,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    /*background-color: orange;*/
 }
 .Especificaciones-text-01 {
     color: var(--color-rojo);
@@ -676,11 +682,10 @@ a[href^="tel:"] {
     color: var(--color-blanco);
 }
 .Contacto-boton-envio {
-    -webkit-appearance: none;
     border: 0.075em solid var(--color-celeste);
     border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
-    -webkit-border-radius: 0.5em;
+    -moz-border-radius : 0.5em;
+    -webkit-border-radius : 0.5em;
     padding: 0.25em;
     margin: 0.15em 0em;
     font-family: 'Barlow Condensed', sans-serif;
@@ -750,9 +755,6 @@ a[href^="tel:"] {
         width: 100vw;
         position: fixed;
         background-image: linear-gradient(90deg, var(--color-azul-oscuro), var(--color-azul-claro));
-        box-shadow: 0px 3px 4px 0px rgba(18,24,59,0.6);
-        -webkit-box-shadow: 0px 3px 4px 0px rgba(18,24,59,0.6);
-        -moz-box-shadow: 0px 3px 4px 0px rgba(18,24,59,0.6);
     }
     #navegador {
         display: none;
@@ -853,7 +855,7 @@ a[href^="tel:"] {
         font-size: 1.5vh;
         text-decoration: none;
         text-align: center;
-        padding: 1.5em 9.5em; 
+        padding: 1.5em 6.5em; 
     }
     #etiqueta-img {
         height: 55vh;
@@ -1160,172 +1162,118 @@ a[href^="tel:"] {
     }
 }
 
-@media (max-width: 900px) and (orientation: landscape) { 
-    
-    /* SECCIÓN BOTELLÍN RETORNABLE */
 
-    #seccionBotellin {
-        display: grid;
-        grid-template-rows: 70% 30%;
-        height: 95vh;
-        width: 100%;
-        /**/
-        grid-template-columns: 35% 65%;
-    }
-    .botellin_img {
-        grid-column: 1 / 2;
-        grid-row: 1 / 3;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-end;
-    }
-    .Botellin-text {
-        grid-column: 2 / 2;
-        grid-row: 1 / 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-        margin: 0em 0em 0.25em 0.5em;
-    }
-    .botones-botellin {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin: 0.25em 0em 0em 0.5em;
-    }
-    .nuevaBecker-text {
-        font-size: 1.5em;
-    }
-    .botellinRetornable-text {
-        font-size: 3.5em;
-        text-align: left;
-    }
-    .botones-botellin a {
-        font-size: 0.75em;
-    }
-    /* Animación RETORNABLE! */
-    .retornableContenedor {
-        top: 5em;
-    }
-    .retornableText span {
-        font-family: 'Barlow Condensed', sans-serif;
-        font-weight: 800;
-        font-size: 75vh;
-        text-decoration: none;
-        background-color: transparent;
-        color: var(--color-azul-claro);
-        border: none;
-        display: inline-block;
-        padding-left: 30%;
-    }
 
-    /* SECCIÓN ETIQUETA */
 
-    .seccionEtiqueta {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 90vh;
-    }
-    .seccionEtiqueta-elementos {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
+
+
+/* Para 960px */  
+@media only screen and (max-width: 980px) and (min-width: 821px) {  
   
+}  
+  
+/* Para 800px */  
+@media only screen and (max-width: 820px) and (min-width: 621px) {  
+  
+}  
+  
+/* Para 600px */  
+@media only screen and (max-width: 620px) and (min-width: 501px) {  
+  
+}  
+  
+/* Para 480px */  
+@media only screen and (max-width: 500px) and (min-width: 341px) {  
+  
+}  
+  
+/* Para 320px */  
+@media only screen and (max-width: 340px) and (min-width: 5px)  {  
+  
+} 
 
-    #etiqueta-img {
-        height: 65vh;
-        padding-right: 3em;
-        z-index: 100;
-    }
-    #etiqueta-img-fondo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 65vh;
-        padding-right: 3em;
-        z-index: -10;
-    }
-    
-    /* botones placa etiqueta */
-    
-      @keyframes shadow-pulse {
-        0% { box-shadow: 0 0 0 0px rgba(var(--color-azul-oscuro-RGB), 0.7); }
-        100% { box-shadow: 0 0 0 15px rgba(var(--color-azul-oscuro-RGB), 0.1); }
-      }
-    .botones {
-        position: absolute;
-        background: rgba(var(--color-celeste-RGB), 0.6);
-        border-radius: 50%;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        
-        animation: shadow-pulse 0.7s infinite;
-        z-index: -1;
-      }
-    .boton-1 {
-        top: 9.4%;
-        left: 9.5%;
-        width: 23%;
-        height: 23%;
-      }
-    .boton-2 {
-        top: 9.8%;
-        left: 50.5%;
-        width: 20%;
-        height: 20%;
-      }
-    .boton-3 {
-        top: 67.4%;
-        left: 6.5%;
-        width: 25%;
-        height: 25%;
-      }
-    .boton-4 {
-        top: 42.7%;
-        left: 50%;
-        width: 25%;
-        height: 25%;
-      }
-    
-    .Etiqueta-sideText {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 32%;
-        border: 0.075em solid;
-        border-radius: 0.5em;
-        border-color: var(--color-celeste);
-        font-family: 'Open Sans', sans-serif;
-        text-decoration: none;  
-        text-align: center;
-        padding: 1em;
-        margin-top: 0em;
-    }
-    .title-sideText, #title_side {
-        color: var(--color-blanco);
-        text-transform: uppercase;
-        font-weight: 800;
-        font-size: 1.6em;
-        line-height: 1.15em;
-        letter-spacing: 0.01em;
-        padding-bottom: 0.25em;
-        text-align: center;
-    }
-    .text-sideText, #text_side {
-        color: var(--color-celeste);
-        font-weight: 400;
-        font-size: 1.2em;
-        line-height: 1.25em;
-        letter-spacing: 0.01em;
-        text-align: center;
-    }
+
+
+
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+/* custom styles */
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+/* custom styles */
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+/* custom styles */
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+/* custom styles */
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+/* custom styles */
 }
 
+
+
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */  
+@media only screen  
+and (min-width : 320px)  
+and (max-width : 480px) {  
+/* Styles */  
+}  
+/* Smartphones (landscape) ----------- */  
+@media only screen  
+and (min-width : 321px) {  
+/* Styles */  
+}  
+/* Smartphones (portrait) ----------- */  
+@media only screen  
+and (max-width : 320px) {  
+/* Styles */  
+}  
+/* iPads (portrait and landscape) ----------- */  
+@media only screen  
+and (min-width : 768px)  
+and (max-width : 1024px) {  
+/* Styles */  
+}  
+/* iPads (landscape) ----------- */  
+@media only screen  
+and (min-width : 768px)  
+and (max-width : 1024px)  
+and (orientation : landscape) {  
+/* Styles */  
+}  
+/* iPads (portrait) ----------- */  
+@media only screen  
+and (min-width : 768px)  
+and (max-width : 1024px)  
+and (orientation : portrait) {  
+/* Styles */  
+}  
+/* Desktops and laptops ----------- */  
+@media only screen  
+and (min-width : 1224px) {  
+/* Styles */  
+}  
+/* Large screens ----------- */  
+@media only screen  
+and (min-width : 1824px) {  
+/* Styles */  
+}  
+/* iPhone 4 ----------- */  
+@media  
+only screen and (-webkit-min-device-pixel-ratio : 1.5),  
+only screen and (min-device-pixel-ratio : 1.5) {  
+/* Styles */  
+} 
