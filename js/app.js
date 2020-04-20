@@ -1,4 +1,3 @@
-
 // variables
 const nombre = document.getElementById('nombre');
 const email = document.getElementById('mail');
@@ -67,12 +66,14 @@ function validarLongitud(campo) {
 
 function validarEmail(campo) {
      const email = campo.value;
+     
      // chequeo si existe un arroba para comfirmar el mail
      // si es true me devuelve 0 y si el false -1 (si no es igual a -1, la encontró)
      if(email.indexOf('@') !== -1 ) {
           // y me borre la clase "error"
           campo.classList.remove('error');
           campo.classList.add('Contacto-boton-error');
+          
      } else {
           // y me habilite la clase "error"
           campo.classList.add('error');
