@@ -703,6 +703,24 @@ a[href^="tel:"] {
     font-weight: 400;
     cursor: pointer;
 }
+.error {
+    border: 0.075em solid var(--color-rojo);
+    border-radius: 0.5em;
+    padding: 0.75em;
+    height: 1em;
+    width: inherit;
+    margin: 0.15em 0em;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: var(--color-rojo);
+    background-color: transparent;
+}
+.Contacto-boton-error::placeholder, .Contacto-boton-textarea-error::placeholder{
+    color: var(--color-rojo);
+}
 
 /* FIN PLACA CONTACTO */
 

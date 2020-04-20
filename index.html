@@ -15,11 +15,13 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800&display=swap" rel="stylesheet">
       <!-- font-family: 'Open Sans', sans-serif; regular 400,400i, semi-bold 600, bold 700,700i, extra bold 800-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script defer src="js/placaEtiqueta.js"></script>
-    <script defer src="js/menu_navResponsive_Becker.js"></script>
-    <script defer src="js/hiddingNavbar.js"></script>
-    <script defer src="js/prefixfree.min.js"></script>    
     
+    <script defer src="js/hiddingNavbar.js"></script>
+    <script defer src="js/menu_navResponsive_Becker.js"></script>
+    <script defer src="js/placaEtiqueta.js"></script>
+    <script defer src="js/app.js"></script>   
+    <!--<script defer src="js/prefixfree.min.js"></script>--> 
+   
 </head>
 
 <body>
@@ -199,10 +201,14 @@
 
       <form class="Contacto-form" id="form" method="POST">
         <input class="Contacto-boton" name="nombre" id="nombre" type="text" placeholder="Tu nombre:">
-        <input class="Contacto-boton" name="mail" id="mail" type="email" placeholder="Tu mail:">
+
+        <input class="Contacto-boton" name="mail" id="mail" type="email" placeholder="Tu mail:" required>
+        
         <input class="Contacto-boton" name="telefono" id="telefono" type="number" placeholder="Tu teléfono:">
-        <textarea class="Contacto-boton Contacto-boton-textarea" name="comentarios" rows="1" cols="1" placeholder="Tu consulta:"></textarea>
-        <input class="Contacto-boton-envio" id="submit" type="submit" value="ENVIAR">
+        
+        <textarea class="Contacto-boton Contacto-boton-textarea" id="consulta" name="comentarios" rows="1" cols="1" placeholder="Tu consulta:"></textarea>
+        
+        <input class="Contacto-boton-envio" id="enviar" type="submit" value="ENVIAR">
       </form>
     </div>
 
