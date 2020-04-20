@@ -654,8 +654,10 @@ a[href^="tel:"] {
 }
 
 .Contacto-boton {
-    border: 0.075em solid var(--color-celeste);
-    border-radius: 0.5em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.075em solid var(--color-celeste);
     padding: 0.75em;
     height: 1em;
     width: inherit;
@@ -668,22 +670,30 @@ a[href^="tel:"] {
     color: var(--color-celeste);
     background-color: transparent;
 }
-.Contacto-boton-textarea {
-    height: 2.5em;
-}
+
 .Contacto-boton:hover {
     background-color: rgba(var(--color-celeste-RGB), 0.3);
     cursor: text;
 }
-.Contacto-boton::placeholder, .Contacto-boton-textarea::placeholder{
-    color: var(--color-celeste);
-}
-.Contacto-boton:focus::placeholder, .Contacto-boton-textarea:focus::placeholder {
+.Contacto-boton:focus {
     color: var(--color-blanco);
+    border-radius: 0.5em;
+}
+.Contacto-boton:enabled {
+    color: var(--color-blanco);
+    border-radius: 0.5em;
+}
+.Contacto-boton::placeholder {
+    color: var(--color-celeste);
+    border-radius: 0.5em;
+}
+.Contacto-boton:focus::placeholder {
+    color: var(--color-blanco);
+    border-radius: 0.5em;
 }
 .Contacto-boton-envio {
     -webkit-appearance: none;
-    border: 0.075em solid var(--color-celeste);
+    border: 0.07em solid var(--color-celeste);
     border-radius: 0.5em;
     -moz-border-radius : 0.5em;
     -webkit-border-radius : 0.5em;
@@ -704,8 +714,7 @@ a[href^="tel:"] {
     cursor: pointer;
 }
 .error {
-    border: 0.075em solid var(--color-rojo);
-    border-radius: 0.5em;
+    border-bottom: 0.07em solid var(--color-rojo);
     padding: 0.75em;
     height: 1em;
     width: inherit;
@@ -716,9 +725,8 @@ a[href^="tel:"] {
     letter-spacing: 0.01em;
     text-decoration: none;
     color: var(--color-rojo);
-    background-color: transparent;
 }
-.Contacto-boton-error::placeholder, .Contacto-boton-textarea-error::placeholder{
+.Contacto-boton-error::placeholder {
     color: var(--color-rojo);
 }
 

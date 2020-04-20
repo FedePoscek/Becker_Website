@@ -5,7 +5,7 @@
     <!--la mayoría de smartphones simulan tamaños de pantalla mayores, haciendo una especie de dimensiones virtuales que faciliten la lectura de webs que no están diseñadas para Responsive Web Design. Por ello, lo más seguro es que tengas que poner el "viewport" en el documento HTML a algo como:-->
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Becker Retornable! -- #vivaLaDevolucion!</title>
+    <title>Becker Retornable! :: #vivaLaDevolucion!</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/BeckerRetornable.css">
@@ -199,14 +199,14 @@
         <div class="Contacto-c4"><a href="mailto:vivaladevolucion@becker.cl">vivaladevolucion@becker.cl</a></div>
       </div>
 
-      <form class="Contacto-form" id="form" method="POST">
-        <input class="Contacto-boton" name="nombre" id="nombre" type="text" placeholder="Tu nombre:">
+      <form class="Contacto-form" id="form" method="POST" action="#">
+        <input class="Contacto-boton" id="nombre" name="nombre" type="text" placeholder="Tu nombre:">
 
-        <input class="Contacto-boton" name="mail" id="mail" type="email" placeholder="Tu mail:">
+        <input class="Contacto-boton" id="mail" name="mail" type="email" placeholder="Tu mail:">
         
-        <input class="Contacto-boton" name="telefono" id="telefono" type="number" placeholder="Tu teléfono:">
+        <input class="Contacto-boton" id="telefono" name="telefono" type="number" placeholder="Tu teléfono:">
         
-        <textarea class="Contacto-boton Contacto-boton-textarea" id="consulta" name="comentarios" rows="1" cols="1" placeholder="Tu consulta:"></textarea>
+        <textarea class="Contacto-boton" id="consulta" name="comentarios" rows="1" cols="1" placeholder="Tu consulta:"></textarea>
         
         <input class="Contacto-boton-envio" id="enviar" type="submit" value="ENVIAR">
       </form>
