@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <!--la mayoría de smartphones simulan tamaños de pantalla mayores, haciendo una especie de dimensiones virtuales que faciliten la lectura de webs que no están diseñadas para Responsive Web Design. Por ello, lo más seguro es que tengas que poner el "viewport" en el documento HTML a algo como:-->
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Becker, promotional landing page">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Becker Retornable! :: #vivaLaDevolucion!</title>
@@ -34,7 +34,7 @@
       <nav class="navbarHidding" id="navegador">
         <div class="brand">
             <div class="links_header">
-              <a href="#"><img class="header-img" id="header-img" src="imgs/LogoBecker.svg" alt="Becker logo"></a></li>
+              <a href="#"><img class="header-img" id="img-header" src="imgs/LogoBecker.svg" alt="Becker logo"></a></li>
               <a class="nav-text" href="#botellin-img">Botellín!</a>
               <a class="nav-text" href="#etiqueta">Lo nuevo!</a>
               <a class="nav-text" href="#vivaLaDevolucion">Viva!</a>
@@ -201,15 +201,20 @@
       </div>
 
       <form class="Contacto-form" id="form" method="POST" action="#">
-        <input class="Contacto-boton" id="nombre" name="nombre" type="text" placeholder="Tu nombre:">
+        <label for="Tu nombre:"></label>
+          <input class="Contacto-boton" id="nombre" name="nombre" type="text" placeholder="Tu nombre:">
+        
+        <label for="Tu mail:"> </label>
+          <input class="Contacto-boton" id="mail" name="mail" type="email" placeholder="Tu mail:">
+       
+        <label for="Tu teléfono:"></label>
+          <input class="Contacto-boton" id="telefono" name="telefono" type="number" placeholder="Tu teléfono:">
+        
+        <label for="Tu consulta:"></label>
+          <textarea class="Contacto-boton" id="consulta" name="comentarios" rows="1" cols="1" placeholder="Tu consulta:"></textarea>
 
-        <input class="Contacto-boton" id="mail" name="mail" type="email" placeholder="Tu mail:">
-        
-        <input class="Contacto-boton" id="telefono" name="telefono" type="number" placeholder="Tu teléfono:">
-        
-        <textarea class="Contacto-boton" id="consulta" name="comentarios" rows="1" cols="1" placeholder="Tu consulta:"></textarea>
-        
-        <input class="Contacto-boton-envio" id="enviar" type="submit" value="ENVIAR">
+        <label for="ENVIAR"></label>
+          <input class="Contacto-boton-envio" id="enviar" type="submit" value="ENVIAR">
       </form>
     </div>
 
