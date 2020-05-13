@@ -32,16 +32,16 @@
 
     <header class="" id="header">
       <nav class="navbarHidding" id="navegador">
-        <ul class="brand">
+        <div class="brand">
             <div class="links_header">
-              <li><a href="#"><img class="header-img" id="header-img" src="imgs/LogoBecker.svg" alt="Becker logo"></a></li>
-              <li><a class="nav-text" href="#botellin-img">Botellín!</a></li>
-              <li><a class="nav-text" href="#etiqueta">Lo nuevo!</a></li>
-              <li><a class="nav-text" href="#vivaLaDevolucion">Viva!</a></li>
-              <li><a class="nav-text" href="#placaCerveza">Conocenos!</a></li>
-              <li><a class="nav-text" href="#contacto">Quiero!</a></li>
+              <a href="#"><img class="header-img" id="header-img" src="imgs/LogoBecker.svg" alt="Becker logo"></a></li>
+              <a class="nav-text" href="#botellin-img">Botellín!</a>
+              <a class="nav-text" href="#etiqueta">Lo nuevo!</a>
+              <a class="nav-text" href="#vivaLaDevolucion">Viva!</a>
+              <a class="nav-text" href="#placaCerveza">Conocenos!</a>
+              <a class="nav-text" href="#contacto">Quiero!</a>
             </div>
-        </ul>
+          </div>
       </nav>
       <nav id="mySidenav" class="sidenav">
           <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
@@ -99,15 +99,15 @@
 <!-- INICIO PLACA ETIQUETA -->
     <!-- Acá se activa "_js/placaEtiqueta.js"-->
     <section class="seccionEtiqueta" id="etiqueta">
-      <ul class="seccionEtiqueta-elementos">
+      <div class="seccionEtiqueta-elementos">
         <div class="alineacionEtiqueta">
          
-          <li><img id="etiqueta-img" src="imgs/beckerEtiqueta_circ.svg" alt="etiqueta en blanco" onclick="cambioTexto(event)"></li>  
-          <li class="botones boton-1"></li>
-          <li class="botones boton-2"></li>
-          <li class="botones boton-3"></li>
-          <li class="botones boton-4"></li>
-          <li><img id="etiqueta-img-fondo" src="imgs/beckerEtiqueta.png" alt="Becker etiqueta"></li>
+          <a><img id="etiqueta-img" src="imgs/beckerEtiqueta_circ.svg" alt="etiqueta en blanco" onclick="cambioTexto(event)"></a>  
+          <a class="botones boton-1"></a>
+          <a class="botones boton-2"></a>
+          <a class="botones boton-3"></a>
+          <a class="botones boton-4"></a>
+          <a><img id="etiqueta-img-fondo" src="imgs/beckerEtiqueta.png" alt="Becker etiqueta"></a>
 
           <figcaption class="textoPuntero">Clickeá sobre la etiqueta para conocerla!</figcaption>
         </div>
@@ -117,7 +117,7 @@
             <p class="text-sideText" id="text_side">Hacé click sobre las distintas partes de la imagen para conocer las novedades!</p>
           </div>
         </div>  
-      </ul>
+      </div>
     </section>
 
 <!-- FIN PLACA ETIQUETA -->
