@@ -760,6 +760,9 @@ a[href^="tel:"] {
 
 /* MEDIA HEADER + NAV */
 @media only screen and (max-width: 800px){
+    #navegador {
+        display: none;
+    }
     .nav-text  {
         display: none;
     }
@@ -767,7 +770,6 @@ a[href^="tel:"] {
     .header-img-responsive {
         height: 3.5em;
         padding-left: 20%;
-
     }
     #mySidenav {
         display: block;
@@ -786,9 +788,7 @@ a[href^="tel:"] {
         -webkit-box-shadow: 0px 3px 4px 0px rgba(18,24,59,0.6);
         -moz-box-shadow: 0px 3px 4px 0px rgba(18,24,59,0.6);
     }
-    #navegador {
-        display: none;
-    }
+  
 }
 
 /* MEDIA BOTELLIN RETORNABLE*/
