@@ -473,6 +473,9 @@ body {
     font-size: 1.2em;
     letter-spacing: 0.01em;
     padding-bottom: 0.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .dev-texto i {
     color: var(--color-azul-claro);
@@ -1361,7 +1364,6 @@ a[href^="tel:"] {
         text-align: center;
     }
 }
-
 
 
 
